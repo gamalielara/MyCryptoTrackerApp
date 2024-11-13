@@ -7,6 +7,7 @@ import com.plcoding.cryptotracker.util.getDrawableIdForCoin
 import java.util.Locale
 
 data class CoinUI(
+    
     val id: String,
     val rank: Int,
     val name: String,
