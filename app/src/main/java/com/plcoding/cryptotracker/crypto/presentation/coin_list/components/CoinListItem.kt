@@ -70,6 +70,12 @@ fun CoinListItem(
                 fontWeight = FontWeight.SemiBold,
                 color = _contentColor
             )
+            Spacer(
+                modifier = Modifier.height(8.dp),
+            )
+            PrizeChanged(
+                change = coinUI.changePercent24hr,
+            )
         }
     }
 }
@@ -88,7 +94,7 @@ private fun CoinListItemPreview() {
 }
 
 
-private val previewCoinUISample = Coin(
+val previewCoinUISample = Coin(
     id = "BitCoin",
     rank = 1,
     name = "BitCoin",
